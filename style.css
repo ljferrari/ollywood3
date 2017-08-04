@@ -1,0 +1,481 @@
+@font-face {
+    font-family: 'FuturaPTBook';
+    src: url('type/FuturaPTBook.otf');
+}
+
+@font-face {
+    font-family: 'FuturaPTMedium';
+    src: url('type/FuturaPTMedium.otf');
+}
+
+@font-face {
+    font-family: 'FuturaPTBold';
+    src: url('type/FuturaPTBold.otf');
+}
+
+
+/*
+* Globals
+*/
+
+
+
+
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+
+/*
+* Base structure
+*/
+
+html,
+body {
+    height: 100%;
+}
+body {
+
+}
+
+img {
+    width: 100%;
+}
+
+
+/*padding & margin */
+
+section {
+    padding: 2em 1em;
+}
+
+#about {
+    padding-top: 8em;
+}
+
+#video {
+    padding-bottom: 8em;
+}
+
+#portfolio {
+    padding: 8rem 0;
+} 
+
+#contact {
+    padding-top:4em;
+}
+
+
+.sep {
+    max-width: 80px;
+    border: 2px solid #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+
+.sep-dot {
+    max-width: 1px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+}
+
+/* Navbar */
+
+.navbar {
+    position: absolute;
+    top:0;
+    width: 100%;
+    background-color: #222;
+}
+
+.navbar-brand {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5em;
+    color: #fafafa;
+}
+
+.nav-link {
+    font-family: 'FuturaPTMedium';
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+    /*    padding: 0;*/
+    margin: 0rem 1.5em;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: #222;
+    transition: 1s;
+}
+
+/* Cover */ 
+
+.hero-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: url(img/smoke.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* Cover Caption */
+
+.cover-container {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    padding: 20px;
+    color: #fff;
+}
+
+#cta-text,
+.cover-heading {
+    font-family: 'FuturaPTMedium';
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+#tagline {
+    font-family: 'FuturaPTBook';
+    font-size: 1.5em;
+    letter-spacing: 0.3rem;
+}
+
+.lead p {
+    font-size: 1em;
+    letter-spacing: 0.15rem;
+    padding:0;
+    margin:0;
+}
+.btn {
+    border-radius: 0;
+}
+
+.btn-secondary {
+    color: #333;
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+.btn-secondary:hover {
+    color: white;
+    background-color: #222;
+    transition: 1s;
+}
+
+.btn-lg {
+    padding: .75rem 1.25rem;
+}
+
+
+/* feature-colors */
+
+.feature-dark {
+    background: #222;
+}
+
+
+
+/* About Section */
+
+.oli {
+    width: 100%;
+}
+
+.oli-block {
+    margin: 2em 0;
+    
+}
+
+.heading {
+    font-family: 'FuturaPTBook', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+}
+
+.text-content {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    line-height: 1.55;
+}
+
+/* Video Section */
+
+#about,
+#video {
+    background: url(img/black-wood-min.jpg) center center no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #F5F5F5;
+    position: relative;
+}
+
+.video{
+    margin-top: 2em;
+    width: 100%;
+}
+
+
+
+/* Portfolio Section */
+
+#portfolio,
+#testimonials {
+    text-align: center;
+    background-color: #222;
+    color: #F5F5F5;
+}
+.sep-black {
+    border-color: black;
+}
+
+.port-sep {
+    margin-bottom: 8rem;
+}
+
+.project-category {
+    font-family: 'FuturaPTBook', sans-serif;
+}
+
+.project-name {
+    font-family: 'Open Sans', sans-serif;
+
+}
+#portfolio h2 {
+    text-transform: uppercase;
+}
+#portfolio p {
+    margin-bottom: 40px;
+}
+#portfolio .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+#portfolio .container-fluid .col-lg-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+#portfolio .portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+#portfolio .portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(13, 13, 13, 0.6);
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+}
+#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+}
+#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px;
+}
+#portfolio .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+
+/* Testimonials Section */
+
+#testimonials {
+    padding: 1rem 0 10rem 0;
+} 
+
+.quote {
+    padding: 1em
+}
+.source {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.fa-padding {
+    padding: 0 5px;
+}
+
+
+
+/* Contact Section */
+
+#contact {
+    padding: 60px 0;
+    text-align: center;
+    padding: 8em 0;
+}
+#contact h2 {
+    text-transform: uppercase;
+}
+#contact form {
+    margin: 40px 0;
+}
+#contact .form-group {
+    margin-bottom: 35px;
+}
+#contact .form-control {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: 2px solid #24242a;
+    color: #0d0d0d;
+    min-height: 45px;
+}
+#contact textarea {
+    height: 140px;
+    resize: none;
+}
+
+.btn-block {
+    background: #24242a;
+    padding: 15px 0;
+    font-size: 16px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #fff;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 2px solid #24242a;
+}
+
+.btn-block:hover,
+.btn-block:focus,
+.btn-block:active {
+    background: #fff;
+    color: #0d0d0d;
+    text-decoration: none;
+    transition: 1s;
+}
+
+/* ==========================================================================
+Footer Map Style
+========================================================================== */
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    color: white;
+    background: #24242a;
+    padding: 60px;
+    text-align: center;
+}
+
+.brand {
+    font-family: 'Kaushan Script', cursive;
+    text-transform: none;
+    font-size: 3em;
+}
+
+footer h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+footer .social {
+    margin: 40px 0;
+}
+footer .social a {
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+footer .social a:hover,
+footer .social a:focus,
+footer .social a:active {
+    color: #a3a3a3;
+}
+footer h6 {
+    text-transform: uppercase;
+    color: #fafafa;
+}
+
+.footer-text {
+    font-size: 1em;
+}
+
+
+
+@media (min-width: 768px) {
+    .site-wrapper-inner {}
+    /*
+    vertical-align: middle;
+}
+    */
+    .navbar {
+        background-color: rgba(0,0,0,0.0001);
+    }
+
+
+
+    .cover-container {
+        width: 42rem;
+    }
+
+    .sep-dot {
+        max-width: 0;
+        border-radius: none;
+        border: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+    
+     section {
+        padding: 8rem;  
+    }
+
+
+    .padding {
+        padding: 0 2em;
+    }
+    
+}
+
+
+
