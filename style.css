@@ -120,7 +120,7 @@ section {
     width: 100%;
     display: flex;
     align-items: center;
-    background: url(img/smoke.jpg) center center no-repeat;
+    background: url(img/smoke-min.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -450,7 +450,9 @@ footer h6 {
         background-color: rgba(0,0,0,0.0001);
     }
 
-
+    #video {
+        padding-top: 2em;
+    }
 
     .cover-container {
         width: 42rem;
