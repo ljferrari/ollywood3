@@ -175,8 +175,7 @@ section {
 
 /* About Section */
 
-#about,
-#video {
+#about-video-bg {
     background: url(img/black-wood-min.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
