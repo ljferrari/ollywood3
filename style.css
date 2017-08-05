@@ -175,6 +175,21 @@ section {
 
 /* About Section */
 
+#about,
+#video {
+    background: url(img/black-wood-min.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #F5F5F5;
+    position: relative;
+}
+
+
+
 #oli {
     position: relative;
     width: 100%;
@@ -215,14 +230,6 @@ section {
 
 /* Video Section */
 
-#about,
-#video {
-    background: url(img/black-wood-min.jpg) center center no-repeat;
-    background-attachment: fixed;
-    text-align: center;
-    color: #F5F5F5;
-    position: relative;
-}
 
 #video-content{
     margin-top: 2em;
@@ -471,10 +478,10 @@ footer h6 {
 
         font-size: 1.2rem;
     }
-    
+
     #cover-heading {
-    font-size: 2.5em
-}
+        font-size: 2.5em
+    }
 
     #cta-text,
     #cover-heading {
