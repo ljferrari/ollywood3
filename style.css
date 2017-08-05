@@ -15,22 +15,14 @@
 
 
 /*
-* Globals
+* Base structure
 */
-
-
-
 
 a,
 a:focus,
 a:hover {
     color: #fff;
 }
-
-
-/*
-* Base structure
-*/
 
 html,
 body {
@@ -43,7 +35,6 @@ body {
 img {
     width: 100%;
 }
-
 
 /*padding & margin */
 
@@ -73,7 +64,6 @@ section {
     border: 2px solid #fff;
     margin-top: 40px;
     margin-bottom: 40px;
-
 }
 
 
@@ -94,7 +84,7 @@ section {
 
 .navbar-brand {
     font-family: 'Kaushan Script', cursive;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #fafafa;
 }
 
@@ -102,20 +92,21 @@ section {
     font-family: 'FuturaPTMedium';
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size: 1.2rem;
+    font-size: 1em;
     /*    padding: 0;*/
     margin: 0rem 1.5em;
 }
 
 .nav-link:hover,
 .navbar-brand:hover {
-    color: #222;
+    color: #fff;
     transition: 1s;
 }
 
+
 /* Cover */ 
 
-.hero-wrapper {
+#hero-wrapper {
     height: 100%;
     width: 100%;
     display: flex;
@@ -123,24 +114,29 @@ section {
     background: url(img/smoke-min.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
+    opacity: 1;
 }
 
 
 /* Cover Caption */
 
-.cover-container {
+#cover-container {
     margin: 0 auto;
     text-align: center;
-    background-color: rgba(0,0,0,0.2);
+    background-color: none;
     padding: 20px;
     color: #fff;
 }
 
 #cta-text,
-.cover-heading {
+#cover-heading {
     font-family: 'FuturaPTMedium';
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+}
+
+#cover-heading {
+    font-size: 2em
 }
 
 #tagline {
@@ -150,11 +146,12 @@ section {
 }
 
 .lead p {
-    font-size: 1em;
+    font-size: 0.9em;
     letter-spacing: 0.15rem;
     padding:0;
     margin:0;
 }
+
 .btn {
     border-radius: 0;
 }
@@ -176,23 +173,29 @@ section {
 }
 
 
-/* feature-colors */
-
-.feature-dark {
-    background: #222;
-}
-
-
-
 /* About Section */
 
-.oli {
+#oli {
+    position: relative;
     width: 100%;
+    max-width: 20em;
+    margin: 0 auto;
 }
 
-.oli-block {
-    margin: 2em 0;
-    
+
+
+#oli-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+
+#oli-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.1em;
 }
 
 .heading {
@@ -221,7 +224,7 @@ section {
     position: relative;
 }
 
-.video{
+#video-content{
     margin-top: 2em;
     width: 100%;
 }
@@ -402,7 +405,7 @@ footer {
     text-align: center;
 }
 
-.brand {
+#brand {
     font-family: 'Kaushan Script', cursive;
     text-transform: none;
     font-size: 3em;
@@ -441,21 +444,69 @@ footer h6 {
 
 
 @media (min-width: 768px) {
-    .site-wrapper-inner {}
-    /*
-    vertical-align: middle;
-}
-    */
+
+    section {
+        padding: 8rem;  
+    }
+
+
+    .padding {
+        padding: 0 2em;
+    }
     .navbar {
         background-color: rgba(0,0,0,0.0001);
+    }
+
+    .nav-link:hover,
+    .navbar-brand:hover {
+        color: #222;
+        transition: 1s;
+    }
+
+    .navbar-brand {
+        font-size: 2.5em;
+    }
+
+    .nav-link {
+
+        font-size: 1.2rem;
+    }
+    
+    #cover-heading {
+    font-size: 2.5em
+}
+
+    #cta-text,
+    #cover-heading {
+        font-family: 'FuturaPTMedium';
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+    }
+
+    #tagline {
+        font-family: 'FuturaPTBook';
+        font-size: 1.5em;
+        letter-spacing: 0.3rem;
+    }
+
+    .lead p {
+        font-size: 1em;
+        letter-spacing: 0.15rem;
+        padding:0;
+        margin:0;
     }
 
     #video {
         padding-top: 2em;
     }
 
-    .cover-container {
+    #cover-container {
         width: 42rem;
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgba(0,0,0,0.2);
+        padding: 20px;
+        color: #fff;
     }
 
     .sep-dot {
@@ -464,19 +515,6 @@ footer h6 {
         border: none;
     }
 
-}
-
-@media (min-width: 768px) {
-    
-     section {
-        padding: 8rem;  
-    }
-
-
-    .padding {
-        padding: 0 2em;
-    }
-    
 }
 
 
