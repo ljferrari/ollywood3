@@ -447,6 +447,11 @@ footer h6 {
     font-size: 1em;
 }
 
+.wow, 
+.fadeInUp {
+    visibility: hidden;
+}
+
 
 
 @media (min-width: 768px) {
