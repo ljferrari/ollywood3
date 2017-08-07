@@ -175,8 +175,9 @@ section {
 
 /* About Section */
 
+
 #about-video-bg {
-    background: url(img/black-wood-min.jpg) no-repeat center center fixed;
+    background: url(img/black-wood-min.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -406,7 +407,8 @@ Footer Map Style
 
 footer {
     color: white;
-    background: #24242a;
+/*    background: #24242a;*/
+    background: #222;
     padding: 60px;
     text-align: center;
 }
@@ -510,6 +512,10 @@ footer h6 {
     #video {
         padding-top: 2em;
     }
+    
+    #about-video-bg {
+        background-attachment: scroll;
+    }
 
     #cover-container {
         width: 42rem;
@@ -525,8 +531,14 @@ footer h6 {
         border-radius: none;
         border: none;
     }
+    
+    #about-video-bg {
+    background: url(img/black-wood-min.jpg) no-repeat center center fixed;
+    
+}
 
 }
+
 
 
 
